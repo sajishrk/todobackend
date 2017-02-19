@@ -21,9 +21,7 @@ builder:
   command: ["pip", "wheel", "--no-index", "-f /build", "."]
 
 agent:
-  image: sajishrk/ansible
-  volumes:
-    - ../../ansible/probe.yml:/ansible/site.yml
+  image: jmenga/ansible
   links:
     - db
   environment:
@@ -31,7 +29,7 @@ agent:
     PROBE_PORT: "3306"
   command: ["probe.yml"]
 
-db:
+db: 
   image: mysql:5.6
   hostname: db
   expose:

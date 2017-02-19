@@ -1,4 +1,4 @@
-FROM sajishrk/todobackend-base:latest
+FROM jmenga/todobackend-base:latest
 MAINTAINER sajish krishnan <sajishrk@gmail.com>
 
 # Install dev/build dependencies
