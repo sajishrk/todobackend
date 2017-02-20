@@ -1,19 +1,19 @@
 <testsuites name="Mocha Tests">
-<testsuite name="Cross Origin Requests" tests="2" failures="0" skipped="0" timestamp="Sun, 19 Feb 2017 19:26:48 GMT" time="0.362">
-<testcase classname="Cross Origin Requests" name="should return the correct CORS headers" time="0.306"/>
-<testcase classname="Cross Origin Requests" name="should allow all origins" time="0.001"/>
+<testsuite name="Cross Origin Requests" tests="2" failures="0" skipped="0" timestamp="Mon, 20 Feb 2017 19:23:52 GMT" time="0.155">
+<testcase classname="Cross Origin Requests" name="should return the correct CORS headers" time="0.128"/>
+<testcase classname="Cross Origin Requests" name="should allow all origins" time="0.003"/>
 </testsuite>
-<testsuite name="Create Todo Item" tests="3" failures="0" skipped="0" timestamp="Sun, 19 Feb 2017 19:26:48 GMT" time="0.3">
-<testcase classname="Create Todo Item" name="should return a 201 CREATED response" time="0.175"/>
+<testsuite name="Create Todo Item" tests="3" failures="0" skipped="0" timestamp="Mon, 20 Feb 2017 19:23:53 GMT" time="0.138">
+<testcase classname="Create Todo Item" name="should return a 201 CREATED response" time="0.082"/>
 <testcase classname="Create Todo Item" name="should receive a location hyperlink" time="0.002"/>
-<testcase classname="Create Todo Item" name="should create the item" time="0.023"/>
+<testcase classname="Create Todo Item" name="should create the item" time="0.01"/>
 </testsuite>
-<testsuite name="Update Todo Item" tests="2" failures="0" skipped="0" timestamp="Sun, 19 Feb 2017 19:26:49 GMT" time="0.383">
-<testcase classname="Update Todo Item" name="should have completed set to true after PUT update" time="0.064"/>
-<testcase classname="Update Todo Item" name="should have completed set to true after PATCH update" time="0.055"/>
+<testsuite name="Update Todo Item" tests="2" failures="0" skipped="0" timestamp="Mon, 20 Feb 2017 19:23:53 GMT" time="0.245">
+<testcase classname="Update Todo Item" name="should have completed set to true after PUT update" time="0.037"/>
+<testcase classname="Update Todo Item" name="should have completed set to true after PATCH update" time="0.036"/>
 </testsuite>
-<testsuite name="Delete Todo Item" tests="2" failures="0" skipped="0" timestamp="Sun, 19 Feb 2017 19:26:49 GMT" time="0.301">
-<testcase classname="Delete Todo Item" name="should return a 204 NO CONTENT response" time="0.064"/>
-<testcase classname="Delete Todo Item" name="should delete the item" time="0.071"/>
+<testsuite name="Delete Todo Item" tests="2" failures="0" skipped="0" timestamp="Mon, 20 Feb 2017 19:23:53 GMT" time="0.216">
+<testcase classname="Delete Todo Item" name="should return a 204 NO CONTENT response" time="0.043"/>
+<testcase classname="Delete Todo Item" name="should delete the item" time="0.049"/>
 </testsuite>
 </testsuites>
