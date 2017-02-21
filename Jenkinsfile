@@ -4,7 +4,7 @@ node {
     try {
         stage 'Run unit/integration tests'
         sh 'make test'
-        
+
         stage 'Build application artefacts'
         sh 'make build'
 
@@ -16,7 +16,7 @@ node {
         sh "make buildtag master \$(git tag --points-at HEAD)"
         withEnv(["DOCKER_USER=${DOCKER_USER}",
                  "DOCKER_PASSWORD=${DOCKER_PASSWORD}",
-                 "DOCKER_EMAIL=${DOCKER_EMAIL}"]) {    
+                 "DOCKER_EMAIL=${DOCKER_EMAIL}"]) {
             sh "make login"
         }
         sh "make publish"
@@ -27,7 +27,7 @@ node {
         build job: DEPLOY_JOB, parameters: [[
             $class: 'StringParameterValue',
             name: 'IMAGE_TAG',
-            value: 'jmenga/todobackend:' + imageTag
+            value: 'sajish/todobackend:' + imageTag
         ]]
     }
     finally {
