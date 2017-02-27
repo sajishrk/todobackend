@@ -1,4 +1,4 @@
-FROM nginx
+FROM sajish/todobackend-nginx
 MAINTAINER SAJISH KRISHNAN <sajishrk@gmail.com>
 
 # Copy todobackend nginx configuration file
