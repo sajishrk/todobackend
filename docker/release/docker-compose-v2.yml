@@ -27,7 +27,7 @@ services:
       - "--die-on-term"
 
   test:
-    image: sajish/todobackend-specs
+    image: jmenga/todobackend-specs
     links:
       - nginx
     environment:
@@ -58,7 +58,7 @@ services:
       MYSQL_ROOT_PASSWORD: password
 
   agent:
-    image: sajish/ansible
+    image: jmenga/ansible
     links:
       - db
     environment:
