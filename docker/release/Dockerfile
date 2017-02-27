@@ -1,5 +1,5 @@
 FROM sajish/todobackend-base:latest
-MAINTAINER Justin Menga <justin.menga@gmail.com>
+MAINTAINER SAJISH KRISHNAN <sajishrk@gmail.com>
 
 # Copy application artifacts
 COPY target /wheelhouse
