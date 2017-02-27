@@ -1,4 +1,4 @@
-FROM sajish/todobackend-base:latest
+FROM jmenga/todobackend-base:latest
 MAINTAINER Sajish Krishnan  <sajishrk@gmail.com>
 
 # Copy application artifacts
