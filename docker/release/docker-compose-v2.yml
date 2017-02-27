@@ -6,7 +6,7 @@ volumes:
 
 services:
   app:
-    build: 
+    build:
       context: ../../
       dockerfile: docker/release/Dockerfile
     links:
@@ -27,7 +27,7 @@ services:
       - "--die-on-term"
 
   test:
-    image: jmenga/todobackend-specs
+    image: sajish/todobackend-specs
     links:
       - nginx
     environment:
@@ -37,7 +37,7 @@ services:
     command: --reporter mocha-jenkins-reporter
 
   nginx:
-    build: 
+    build:
       context: .
       dockerfile: Dockerfile.nginx
     links:
