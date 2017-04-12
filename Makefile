@@ -3,7 +3,7 @@ PROJECT_NAME ?= todobackend
 ORG_NAME ?= sajish
 REPO_NAME ?= todobackend
 
-# Filenames
+# Filenames in test
 DEV_COMPOSE_FILE := docker/dev/docker-compose.yml
 REL_COMPOSE_FILE := docker/release/docker-compose.yml
 
